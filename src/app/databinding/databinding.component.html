@@ -1,0 +1,17 @@
+<p>
+  {{stringInterpolation}} | {{numberInterpolation}}
+</p>
+<hr>
+<h2>Property Binding</h2>
+<input type="text" [value] = "stringInterpolation">
+<h3>Custom Property Binding</h3>
+<fa-property-binding [result]="10"></fa-property-binding>
+<hr>
+<h2>Event Binding</h2>
+<!--<fa-event-binding><fa-event-binding>-->
+<hr>
+<h3>Custom Event Binding</h3>
+<fa-event-binding (clicked) = "onCustomClicked($event)"></fa-event-binding>
+<hr>
+<h2>Two-way Data Binding</h2>
+<fa-twoway-data-binding></fa-twoway-data-binding>

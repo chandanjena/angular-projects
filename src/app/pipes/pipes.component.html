@@ -1,0 +1,9 @@
+<p>
+  {{someText | uppercase}}
+</p>
+<p>{{someDate | date:"MM/dd/yy"}}</p>
+<p>{{someText | slice:3:5 | uppercase}}</p>
+<hr>
+<h2>Custom pipe example</h2>
+<input type="text" #input (keyup)="0">
+<p>{{input.value | mydouble}}</p>
